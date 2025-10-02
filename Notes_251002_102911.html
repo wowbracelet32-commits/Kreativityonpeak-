@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kreativity on Peak</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #fff5f8;
+    }
+    header {
+      padding: 40px 20px;
+      background: #ffccd5;
+      color: #333;
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    p { font-size: 1.2rem; }
+    .buttons {
+      margin: 50px 0;
+    }
+    .buttons button {
+      margin: 15px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background: #ff4d6d;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .buttons button:hover {
+      background: #e63950;
+    }
+    section {
+      display: none;
+      padding: 40px 20px;
+    }
+    .product {
+      margin: 20px auto;
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    }
+    .price { font-weight: bold; margin: 10px 0; }
+    .order-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    .order-btn:hover { background: #e63950; }
+    .back-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 25px;
+      background: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #ffe6ea;
+    }
+  </style>
+</head>
+<body>
+  <!-- Homepage -->
+  <header>
+    <h1>Kreativity on Peak</h1>
+    <p><em>Bracelets that reflect your style</em></p>
+  </header>
+
+  <!-- First Page: Only 2 Buttons -->
+  <div id="homepage" class="buttons">
+    <button onclick="showSection('bracelets')">Bracelets</button>
+    <button onclick="showSection('resin')">Resin Art Pieces</button>
+  </div>
+
+  <!-- Bracelet Section -->
+  <section id="bracelets">
+    <h1>Bracelets Collection</h1>
+    <p>(Click "Order Now" to DM me on Instagram and place your order)</p>
+
+    <div class="product">
+      <h2>Single Colour (No Charm)</h2>
+      <p class="price">₹60</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Customised (No Charm)</h2>
+      <p class="price">₹80</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Single Colour with Charm</h2>
+      <p class="price">₹100</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Customised with Charm</h2>
+      <p class="price">₹120</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Resin Bead Bracelet</h2>
+      <p class="price">₹150</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+  </section>
+
+  <!-- Resin Section -->
+  <section id="resin">
+    <h1>Resin Art Collection</h1>
+    <p>(Click "Order Now" to DM me on Instagram and place your order)</p>
+
+    <div class="product">
+      <h2>Coasters (Circle/Square)</h2>
+      <p class="price">₹150</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Candle Holder</h2>
+      <p class="price">₹200</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Earrings</h2>
+      <p class="price">₹90</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Necklace</h2>
+      <p class="price">₹100</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <div class="product">
+      <h2>Wall Hanging</h2>
+      <p class="price">₹100</p>
+      <a class="order-btn" href="https://instagram.com/kreativityonpeak2410" target="_blank">Order Now</a>
+    </div>
+
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us on Instagram: 
+      <a href="https://instagram.com/kreativityonpeak2410" target="_blank">@Kreativityonpeak2410</a>
+    </p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.getElementById("homepage").style.display = "none";
+      document.getElementById("bracelets").style.display = "none";
+      document.getElementById("resin").style.display = "none";
+      document.getElementById(sectionId).style.display = "block";
+    }
+    function goBack() {
+      document.getElementById("homepage").style.display = "block";
+      document.getElementById("bracelets").style.display = "none";
+      document.getElementById("resin").style.display = "none";
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
